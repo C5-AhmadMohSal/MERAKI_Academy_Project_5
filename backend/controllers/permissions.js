@@ -40,5 +40,5 @@ const createPermission = (req, res) => {
 };
 
 module.exports = {
-    createPermission
-}
+  createPermission,
+};
