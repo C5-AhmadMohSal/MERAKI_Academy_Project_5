@@ -68,8 +68,10 @@ const getAllProduct= (req, res) => {
       }
     });
   }
+
 module.exports = {
   getOneProductById,
   getAllProduct,
-  getProductByCategory
+  getProductByCategory,
+
 };
