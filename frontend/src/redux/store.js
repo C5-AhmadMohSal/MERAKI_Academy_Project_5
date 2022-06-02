@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-// Ahmad
+import authReducer from "./reducers/auth";
 // Dina
 // Taha
 export default configureStore({
   reducer: {
-    //   Ahmad
+    auth: authReducer,
     //  Dina
     // Taha
   },
