@@ -166,7 +166,6 @@ const CreateProduct = () => {
                     </center>
                 </>
             </div>
-            
             <button onClick={() => {
                 setIsClicked(true);
             }}> choose category to add Brand</button>
@@ -174,16 +173,44 @@ const CreateProduct = () => {
                 category &&
                 category.map((element, i) => {
                     return (
-                        <p onClick={() => {
+                        <button onClick={() => {
                             setCategory_id(element.id)
                             console.log(category_id);
                             setIsClicked(false)
                         }}>
                             category name : {element.categoryName}
-                        </p>
+                            
+                        </button>
                     )
                 })
                 : ""}
+
+
+
+<button onClick={() => {
+                setIsClicked(true);
+            }}> choose Brand to add product</button>
+            {isClicked ?
+                Brand &&
+                Brand.map((element, i) => {
+                    return (
+                        <button onClick={() => {
+                            setBrand_id(element.id)
+                            console.log(brand_id);
+                            setIsClicked(false)
+                        }}>
+                            Brand name : {element.brandName}
+                            
+                        </button>
+                    )
+                })
+                : ""}
+
+
+
+
+
+
         </>
     );
 };
