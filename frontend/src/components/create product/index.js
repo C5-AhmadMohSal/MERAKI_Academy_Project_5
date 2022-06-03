@@ -199,6 +199,7 @@ const CreateProduct = () => {
                             console.log(brand_id);
                             setIsClicked(false)
                         }}>
+                            {/* <sas>sasaas</sas> */}
                             Brand name : {element.brandName}
                             
                         </button>
